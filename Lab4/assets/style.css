@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+h2 {
+  text-align: center;
+}
+
+///////////////// Zadanie 1
+
+.block {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.block1 {
+  background-color: #ff9ff3;
+}
+.block2 {
+  background-color: #feca57;
+  background-image: url("/assets/images/emblem.png");
+}
+.block3 {
+  background-color: #ff6b6b;
+  background-image: url("/assets/images/emblem.png");
+  background-repeat: repeat-x;
+}
+.block4 {
+  background-color: #48dbfb;
+  background-image: url("/assets/images/emblem.png");
+  background-repeat: repeat-y;
+}
+.block5 {
+  background-color: #1dd1a1;
+  background-image: url("/assets/images/emblem.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/////////////////////////// Zadanie 2
+
+fieldset {
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4px;
+  margin-bottom: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.padding {
+  padding: 8px;
+}
+
+/* Стилизация формы */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилизация заголовка формы */
+form h2 {
+  color: #333;
+}
+
+/* Стилизация обязательных полей */
+form [required] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* Стилизация активных полей ввода */
+form input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form input:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Стилизация кнопок */
+form button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Стилизация кнопки "Anuleaza" */
+form button:first-child {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+/* Стилизация кнопки "Trimite" */
+form button:last-child {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Стилизация подсказки об обязательных полях */
+form span {
+  color: #341f97;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Стилизация радиокнопок и чекбоксов */
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-left: 16px;
+}
+
+/* Стилизация выбора цвета */
+form input[type="color"] {
+  width: 190px;
+}
+
+/* Стилизация текстовой области */
+form textarea {
+  width: 100%;
+  resize: none;
+}
+
+/////////////////// Zadanie 3
+
+ul li:before {
+  content: "[";
+}
+
+ul li:after {
+  content: "]";
+}
+
+ol li:first-child:before {
+  content: "<< ";
+}
+
+ol li:last-child:after {
+  content: " >>";
+}
+
+p::first-letter {
+  font-size: 40px;
+}
+p::first-line {
+  color: red;
+}
+
+select option:selected {
+  background-color: lightgreen;
+}

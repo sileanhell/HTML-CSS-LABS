@@ -1,0 +1,19 @@
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 8px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 5px 10px;
+}

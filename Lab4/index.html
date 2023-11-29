@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторная работа №4</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Задание 1</h2>
+      <div class="block block1"></div>
+      <div class="block block2"></div>
+      <div class="block block3"></div>
+      <div class="block block4"></div>
+      <div class="block block5"></div>
+    </div>
+    <form>
+      <h2>Задание 2</h2>
+      <fieldset style="padding: 24px">
+        <div class="flex-row">
+          <fieldset>
+            <legend><b>Date personale</b></legend>
+            <div class="grid">
+              <span>*Numele:</span>
+              <input type="text" pattern="^[A-Z][a-zA-Z]*$" required />
+
+              <span>*Prenumele:</span>
+              <input type="text" pattern="^[A-Z][a-zA-Z]*$" required />
+
+              <span>E-mail:</span>
+              <input type="email" />
+
+              <span>*Data nasterii:</span>
+              <input type="date" required />
+
+              <span>Sexul:</span>
+              <div>
+                <input type="radio" name="sexul" />
+                <label>F</label>
+
+                <input type="radio" name="sexul" />
+                <label>M</label>
+              </div>
+
+              <span>Telefonul:</span>
+              <input type="tel" />
+
+              <span>Raionul:</span>
+              <select>
+                <option value="Bălți">Bălți</option>
+                <option value="Briceni">Briceni</option>
+                <option value="Căușeni">Căușeni</option>
+                <option value="Chișinău">Chișinău</option>
+                <option value="Comrat">Comrat</option>
+                <option value="Anenii Noi">Anenii Noi</option>
+              </select>
+
+              <span>Studii:</span>
+              <div>
+                <input type="checkbox" />
+                <label for="scales">Colegiu</label>
+                <br />
+                <input type="checkbox" />
+                <label for="horns">Licență</label>
+                <br />
+                <input type="checkbox" />
+                <label for="horns">Masterat</label>
+              </div>
+
+              <span>Suplimentar:</span>
+              <textarea placeholder="Scrie aici" maxlength="1000" rows="4"></textarea>
+            </div>
+          </fieldset>
+          <div class="flex-col">
+            <fieldset>
+              <legend><b>Date despre produsul ales</b></legend>
+              <div class="grid">
+                <span>*Denumirea produs:</span>
+                <input type="text" pattern="[A-Za-z]+" required />
+
+                <span>*Producătorul:</span>
+                <input type="text" pattern="[A-Za-z]+" required />
+
+                <span>*Cantitatea de produse:</span>
+                <input type="text" required />
+
+                <span>*Culoarea:</span>
+                <input type="color" required />
+
+                <span>*Mărimea:</span>
+                <input type="text" required />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><b>Date personale</b></legend>
+              <div class="grid">
+                <span>*Tipul cardului:</span>
+                <div>
+                  <input type="radio" name="card" />
+                  <label>Viza</label>
+
+                  <input type="radio" name="card" />
+                  <label>MasterCard</label>
+                </div>
+
+                <span>*Numărul cardului:</span>
+                <input type="text" pattern="\d+" required />
+
+                <span>*Expiră:</span>
+                <input type="date" required />
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="grid padding">
+          <div>
+            <button>Anuleaza</button>
+            <button>Trimite</button>
+          </div>
+          <span>*Câmpul trebuie să fie completat</span>
+        </div>
+      </fieldset>
+    </form>
+    <div>
+      <h2>Задание 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue metus ut tortor eleifend, eget lobortis mi consequat.</p>
+      <ul>
+        <li>Маркированный элемент 1</li>
+        <li>Маркированный элемент 2</li>
+      </ul>
+
+      <ol>
+        <li>Нумерованный элемент 1</li>
+        <li>Нумерованный элемент 2</li>
+      </ol>
+    </div>
+  </body>
+</html>

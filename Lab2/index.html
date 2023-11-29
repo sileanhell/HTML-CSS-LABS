@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторная работа #2</title>
+    <script src="./assets/tailwindcss.js"></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="flex flex-col items-center gap-12">
+      <div id="task-1">
+        <h1 class="py-4 text-xl font-bold text-center">Задание 1</h1>
+        <div class="p-4 gap-4 flex justify-center item-center">
+          <img src="./assets/images/z1/1.jpg" alt="Куница 1" title="Куница 1" width="200" height="150" />
+          <img src="./assets/images/z1/2.jpg" alt="Куница 2" title="Куница 2" width="200" height="150" />
+        </div>
+        <div class="flex justify-center">
+          <img class="border-2 border-black" src="./assets/images/z1/3.jpg" alt="Куница 3" title="Куница 3" width="200" height="150" />
+        </div>
+      </div>
+      <div id="task-2">
+        <h1 class="py-4 text-xl font-bold text-center">Задание 2-3</h1>
+        <table>
+          <tr>
+            <td colspan="5" class="font-bold">Date despre copiii colaboratorilor</td>
+          </tr>
+          <tr>
+            <td class="font-bold">Nume, prenume</td>
+            <td class="font-bold">Adresa fizică</td>
+            <td class="font-bold">Număr copii minori</td>
+            <td class="font-bold">Prenume copil şi anul de naștere</td>
+            <td class="font-bold">Poza copil</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Ivanov Elena</td>
+            <td rowspan="2">Str. codrilor 45, ap.56</td>
+            <td rowspan="2">2</td>
+            <td>Elena, 2006</td>
+            <td>
+              <a class="hover:cursor-pointer hover:opacity-60 duration-200" href="./copiii/elena.html">
+                <img class="object-cover object-center w-[200px] h-[100px]" src="./assets/images/z2/elena.jpg" width="200" height="150" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Valeriu, 2011</td>
+            <td>
+              <a class="hover:cursor-pointer hover:opacity-60 duration-200" href="./copiii/valeriu.html">
+                <img class="object-cover object-center w-[200px] h-[100px]" src="./assets/images/z2/valeriu.jpg" width="200" height="150" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="3">Mihailov Marta</td>
+            <td rowspan="3">Str. puskin 10, ap.45</td>
+            <td rowspan="3">3</td>
+            <td>Ion, 2008</td>
+            <td>
+              <a class="hover:cursor-pointer hover:opacity-60 duration-200" href="./copiii/ion.html">
+                <img class="object-cover object-center w-[200px] h-[100px]" src="./assets/images/z2/ion.jpg" width="200" height="150" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Ecaterina, 2010</td>
+            <td>
+              <a class="hover:cursor-pointer hover:opacity-60 duration-200" href="./copiii/ecaterina.html">
+                <img class="object-cover object-center w-[200px] h-[100px]" src="./assets/images/z2/ecaterina.jpg" width="200" height="150" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Valentin, 2011</td>
+            <td>
+              <a class="hover:cursor-pointer hover:opacity-60 duration-200" href="./copiii/valentin.html">
+                <img class="object-cover object-center w-[200px] h-[100px]" src="./assets/images/z2/valentin.jpg" width="200" height="150" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Cliucnicov Mgdalena</td>
+            <td>Str. nucilor 34, ap. 22</td>
+            <td>1</td>
+            <td>Mariuta, 2012</td>
+            <td>
+              <a class="hover:cursor-pointer hover:opacity-60 duration-200" href="./copiii/mariuta.html">
+                <img class="object-cover object-center w-[200px] h-[100px]" src="./assets/images/z2/mariuta.jpg" width="200" height="150" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="font-bold">Total număr copii</td>
+            <td colspan="3">6</td>
+          </tr>
+        </table>
+      </div>
+      <div id="task-4">
+        <h1 class="py-4 text-xl font-bold text-center">Задание 4</h1>
+        <img src="./assets/images/z3/workplace.jpg" usemap="#workmap" />
+        <map name="workmap">
+          <area alt="Ноутбук" title="Ноутбук" href="./workplace/notebook.html" coords="32,346,43,189,33,41,274,44,265,189,274,349" shape="poly" />
+          <area alt="Телефон" title="Телефон" href="./workplace/phone.html" coords="289,171,337,248" shape="rect" />
+          <area alt="Кофе" title="Кофе" href="./workplace/coffee.html" coords="338,301,44" shape="circle" />
+        </map>
+      </div>
+      <div id="task-5">
+        <h1 class="py-4 text-xl font-bold text-center">Задание 5</h1>
+        <form>
+          <div class="flex gap-2">
+            <fieldset class="p-4">
+              <legend>Date personale</legend>
+              <div class="grid grid-cols-2 gap-2">
+                <div>Numele: <span class="text-bold text-red-500">*</span></div>
+                <input type="text" pattern="^[A-Z][a-zA-Z]*$" class="px-2 border border-black/40 rounded" required />
+
+                <div>Prenumele: <span class="text-bold text-red-500">*</span></div>
+                <input type="text" pattern="^[A-Z][a-zA-Z]*$" class="px-2 border border-black/40 rounded" required />
+
+                <div>E-mail:</div>
+                <input type="email" class="px-2 border border-black/40 rounded" />
+
+                <div>Data nasterii: <span class="text-bold text-red-500">*</span></div>
+                <input type="date" class="px-2 border border-black/40 rounded" required />
+
+                <div>Sexul:</div>
+                <div>
+                  <input type="radio" name="sexul" x />
+                  <label>Masculin</label>
+
+                  <input type="radio" name="sexul" />
+                  <label>Feminin</label>
+                </div>
+
+                <div>Telefonul:</div>
+                <input type="tel" class="px-2 border border-black/40 rounded" />
+
+                <div>Raionul:</div>
+                <select class="px-1 border border-black/40 rounded">
+                  <option value="Bălți">Bălți</option>
+                  <option value="Briceni">Briceni</option>
+                  <option value="Căușeni">Căușeni</option>
+                  <option value="Chișinău">Chișinău</option>
+                  <option value="Comrat">Comrat</option>
+                  <option value="Anenii Noi">Anenii Noi</option>
+                </select>
+
+                <div>Studii:</div>
+                <div>
+                  <input type="checkbox" />
+                  <label for="scales">Colegiu</label>
+                  <br />
+                  <input type="checkbox" />
+                  <label for="horns">Licență</label>
+                  <br />
+                  <input type="checkbox" />
+                  <label for="horns">Masterat</label>
+                </div>
+
+                <div>Suplimentar:</div>
+                <textarea class="px-1 border border-black/40 rounded" placeholder="Scrie aici" maxlength="1000"></textarea>
+              </div>
+            </fieldset>
+            <div class="flex flex-col gap-2">
+              <fieldset class="p-4">
+                <legend>Date despre produsul ales</legend>
+                <div class="grid grid-cols-2 gap-2">
+                  <div>Denumirea produs: <span class="text-bold text-red-500">*</span></div>
+                  <input type="text" pattern="[A-Za-z]+" class="px-2 border border-black/40 rounded" required />
+
+                  <div>Producătorul: <span class="text-bold text-red-500">*</span></div>
+                  <input type="text" pattern="[A-Za-z]+" class="px-2 border border-black/40 rounded" required />
+
+                  <div>Cantitatea de produse: <span class="text-bold text-red-500">*</span></div>
+                  <input type="text" class="px-2 border border-black/40 rounded" required />
+
+                  <div>Culoarea: <span class="text-bold text-red-500">*</span></div>
+                  <input type="color" class="px-2 border border-black/40 rounded" required />
+
+                  <div>Mărimea: <span class="text-bold text-red-500">*</span></div>
+                  <input type="text" class="px-2 border border-black/40 rounded" required />
+                </div>
+              </fieldset>
+              <fieldset class="p-4 h-full">
+                <legend>Date bancare</legend>
+                <div class="grid grid-cols-2 gap-2">
+                  <div>Tipul cardului: <span class="text-bold text-red-500">*</span></div>
+                  <div>
+                    <input type="radio" name="card" />
+                    <label>Viza</label>
+
+                    <input type="radio" name="card" />
+                    <label>MasterCard</label>
+                  </div>
+
+                  <div>Numărul cardului: <span class="text-bold text-red-500">*</span></div>
+                  <input type="text" pattern="\d+" class="px-2 border border-black/40 rounded" required />
+
+                  <div>Expiră: <span class="text-bold text-red-500">*</span></div>
+                  <input type="date" class="px-2 border border-black/40 rounded" required />
+
+                  <div>CVV: <span class="text-bold text-red-500">*</span></div>
+                  <input type="text" min="3" max="3" pattern="\d+" class="px-2 border border-black/40 rounded" required />
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="p-2 w-full flex justify-between">
+            <span>Поле со знаком <span class="text-bold text-red-500">*</span> - обязательное.</span>
+            <button type="submit" class="px-2 py-1 bg-black/10 rounded hover:opacity-60 duration-200">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div id="task-6">
+        <h1 class="py-4 text-xl font-bold text-center">Задание 6</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1923.3528821051057!2d28.822842762959056!3d47.019982165841256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c2d03e2c6b1%3A0xd8e8b74ac8c3ef7b!2z0JzQvtC70LTQsNCy0YHQutC40Lkg0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INCj0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sru!2s!4v1695500310154!5m2!1sru!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div id="task-7">
+        <h1 class="py-4 text-xl font-bold text-center">Задание 7</h1>
+        <div class="grid grid-cols-2 gap-4">
+          <span class="text-center">MP3</span>
+          <span class="text-center">OGG</span>
+          <audio controls>
+            <source src="./assets/audio/test.mp3" type="audio/mpeg" />
+          </audio>
+          <audio controls>
+            <source src="./assets/audio/test.ogg" type="audio/ogg" />
+          </audio>
+        </div>
+        <br />
+        <div class="grid grid-cols-2 gap-4">
+          <span class="text-center">MP4</span>
+          <span class="text-center">WEBM</span>
+          <video width="320" height="240" controls>
+            <source src="./assets/video/test.mp4" type="video/mp4" />
+          </video>
+          <video width="320" height="240" controls>
+            <source src="./assets/video/test.webm" type="video/webm" />
+          </video>
+        </div>
+      </div>
+      <br/>
+    </div>
+  </body>
+</html>
