@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  display: block;
+}
+
+/* Выше дополнительные стили для нормального отображения элементов */
+
+.header,
+.nav,
+.aside,
+.footer {
+  width: 100%;
+  background-color: #90ee90;
+  padding: 18px;
+}
+
+.flex-header,
+.flex-nav,
+.flex-footer,
+.flex-aside {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sections {
+  width: 100%;
+  height: 100%;
+  background-color: #90ee90;
+  padding: 18px;
+}
+
+@media (min-width: 640px) {
+  .nav {
+    width: 25%;
+    height: 100%;
+  }
+
+  .aside {
+    width: 25%;
+    height: 100%;
+  }
+
+  .flex-nav {
+    flex-direction: row;
+  }
+
+  .flex-aside {
+    flex-direction: row;
+  }
+}

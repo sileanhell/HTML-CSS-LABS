@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+div {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Задача 2 */
+.linear-gradient {
+  color: white;
+  background: linear-gradient(45deg, blue, red);
+}
+
+.repeating-linear-gradient {
+  background: repeating-linear-gradient(45deg, yellow, green 100px);
+}
+
+.radial-gradient {
+  background: radial-gradient(circle, lime, yellow, red);
+}
+
+.repeating-radial-gradient {
+  color: white;
+  background: repeating-radial-gradient(circle, green, blue 50px);
+}
+
+.conic-gradient {
+  background: conic-gradient(lime, yellow, red);
+}
+
+.repeating-conic-gradient {
+  color: ;
+  background: repeating-conic-gradient(lime, yellow, blue 90deg);
+}
+
+/* Задача 3 */
+.transform-rotate {
+  background-color: green;
+  transform: rotate(45deg);
+}
+.transform-scale {
+  background-color: green;
+  transform: scale(0.5);
+}
+.transform-skew {
+  background-color: green;
+  transform: skew(30deg);
+}
+.transform-translate {
+  background-color: green;
+  transform: translate(50px, 50px);
+}
+
+/* Задача 4 */
+.transition {
+  background-color: red;
+  transition-duration: 1000ms;
+}
+
+.transition:hover {
+  color: white;
+  background-color: blue;
+}
+
+/* Задача 5 */
+@keyframes animation1 {
+  0% {
+    background-color: blue;
+  }
+  33% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.element1 {
+  background-color: magenta;
+  animation: animation2 4s infinite;
+}
+
+.element2 {
+  animation: animation1 3s infinite;
+}
