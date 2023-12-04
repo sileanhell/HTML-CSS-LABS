@@ -48,7 +48,6 @@ div {
 }
 
 .repeating-conic-gradient {
-  color: ;
   background: repeating-conic-gradient(lime, yellow, blue 90deg);
 }
 
@@ -110,4 +109,33 @@ div {
 
 .element2 {
   animation: animation1 3s infinite;
+}
+
+section {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+
+.block {
+  margin: 5px;
+  width: 50px;
+  height: 150px;
+}
+
+.left {
+  float: left;
+  background: pink;
+}
+
+.right {
+  float: right;
+  background: cyan;
+}
+
+@media (max-width: 768px) {
+  .left {
+    float: right;
+  }
 }
