@@ -111,6 +111,8 @@ div {
   animation: animation1 3s infinite;
 }
 
+/* ================================================= */
+
 section {
   box-sizing: border-box;
   border: 1px solid blue;
