@@ -9,7 +9,7 @@ h2 {
   text-align: center;
 }
 
-///////////////// Zadanie 1
+/* ///////////////// Zadanie 1 */
 
 .block {
   width: 200px;
@@ -24,26 +24,26 @@ h2 {
 }
 .block2 {
   background-color: #feca57;
-  background-image: url("/assets/images/emblem.png");
+  background-image: url("./images/emblem.png");
 }
 .block3 {
   background-color: #ff6b6b;
-  background-image: url("/assets/images/emblem.png");
+  background-image: url("./images/emblem.png");
   background-repeat: repeat-x;
 }
 .block4 {
   background-color: #48dbfb;
-  background-image: url("/assets/images/emblem.png");
+  background-image: url("./images/emblem.png");
   background-repeat: repeat-y;
 }
 .block5 {
   background-color: #1dd1a1;
-  background-image: url("/assets/images/emblem.png");
+  background-image: url("./images/emblem.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/////////////////////////// Zadanie 2
+/* /////////////////////////// Zadanie 2 */
 
 fieldset {
   height: 100%;
@@ -150,7 +150,7 @@ form textarea {
   resize: none;
 }
 
-/////////////////// Zadanie 3
+/* /////////////////// Zadanie 3 */
 
 ul li:before {
   content: "[";
